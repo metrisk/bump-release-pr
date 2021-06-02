@@ -16,7 +16,7 @@ async function run(): Promise<void> {
   const octokit = github.getOctokit(token)
   try {
     const pr = await getPR(octokit)
-    core.info(`PR:${pr.id} has the lastest release info`)
+    core.info(`PR:${pr.number} has the lastest release info`)
     return
   } catch (err) {
     core.setFailed(err)

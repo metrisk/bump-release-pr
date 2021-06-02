@@ -1,8 +1,9 @@
 import { PullRequest } from './interfaces/PullRequest'
 import { GitHub } from '@actions/github/lib/utils'
 import { createPR } from './createPR'
+import { updatePR } from './updatePR'
 
-export async function getPR (
+export async function getPR(
   client: InstanceType<typeof GitHub>
 ): Promise<PullRequest> {
   const ghRepo = process.env.GITHUB_REPOSITORY as `${string}/${string}`
@@ -16,7 +17,8 @@ export async function getPR (
   })
   if (pulls.data.length > 0) {
     const existingPR = pulls.data[0]
-    return existingPR
+    const updatedPR = updatePR(client, existingPR.number)
+    return updatedPR
   } else {
     pr = await createPR(client)
     return pr
