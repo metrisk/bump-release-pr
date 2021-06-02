@@ -42,7 +42,7 @@
     "through2": "4.0.2"
   },
   "devDependencies": {
-    "@arkweid/lefthook": "0.7.5",
+    "@arkweid/lefthook": "0.7.6",
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-conventional": "12.1.4",
     "@octokit/core": "3.4.0",
