@@ -3,6 +3,7 @@ import github from '@actions/github'
 import { getPR } from './getPR'
 
 async function run(): Promise<void> {
+  core.info("I AM HERE!")
   const token = process.env.GITHUB_TOKEN
   const repoPath = process.env.GITHUB_WORKSPACE
   if (typeof token === 'undefined' || typeof repoPath === 'undefined') {

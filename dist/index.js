@@ -257,6 +257,7 @@ const github_1 = __importDefault(__nccwpck_require__(5438));
 const getPR_1 = __nccwpck_require__(8933);
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
+        core.info("I AM HERE!");
         const token = process.env.GITHUB_TOKEN;
         const repoPath = process.env.GITHUB_WORKSPACE;
         if (typeof token === 'undefined' || typeof repoPath === 'undefined') {
