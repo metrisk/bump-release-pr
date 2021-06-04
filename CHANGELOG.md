@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/metrisk/bump-release-pr/compare/v0.0.3...v0.0.4) (2021-06-04)
+
+
+### Bug Fixes
+
+* **build:** issue with the build resolved ([17dd8d0](https://github.com/metrisk/bump-release-pr/commit/17dd8d070f6f3e4307797db067f3128c3132f2f5))
+* **main:** wrong main file ([5ecf5d7](https://github.com/metrisk/bump-release-pr/commit/5ecf5d7b6b0fcf38be3dffe89dcc8b5b24d3498d))
+
 ### [0.0.3](https://github.com/metrisk/bump-release-pr/compare/v0.0.2...v0.0.3) (2021-06-02)
 
 
