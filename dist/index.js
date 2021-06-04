@@ -83,6 +83,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.createPRBody = void 0;
 const conventional_changelog_1 = __importDefault(__nccwpck_require__(9461));
+// @ts-ignore
 const conventional_changelog_metrisk_1 = __importDefault(__nccwpck_require__(8574));
 const semver_regex_1 = __importDefault(__nccwpck_require__(681));
 function createPRBody() {
@@ -257,14 +258,12 @@ const github_1 = __importDefault(__nccwpck_require__(5438));
 const getPR_1 = __nccwpck_require__(8933);
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
-        core.info("I AM HERE!");
         const token = process.env.GITHUB_TOKEN;
         const repoPath = process.env.GITHUB_WORKSPACE;
         if (typeof token === 'undefined' || typeof repoPath === 'undefined') {
             core.setFailed(`Environment variable GITHUB_${typeof token !== 'undefined' ? 'WORKSPACE' : 'TOKEN'} is required`);
             return;
         }
-        const repository = process.env.GITHUB_REPOSITORY;
         const octokit = github_1.default.getOctokit(token);
         try {
             const pr = yield getPR_1.getPR(octokit);

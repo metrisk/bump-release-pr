@@ -1,4 +1,5 @@
 import conventionalChangelog from 'conventional-changelog'
+// @ts-ignore
 import ccConfig from 'conventional-changelog-metrisk'
 import { Commit } from 'conventional-commits-parser'
 import semverRegex from 'semver-regex'

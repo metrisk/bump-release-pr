@@ -1,5 +1,5 @@
 name: 'Bump release PR'
-description: ''
+description: 'Bumps a release PR'
 author: 'Metrisk'
 runs:
   using: 'node12'
