@@ -67,7 +67,7 @@ function createPR(client) {
             base: 'main',
             head: 'release',
             body: yield createPRBody_1.createPRBody(),
-            title: 'RELEASE'
+            title: 'chore(release)'
         });
         return createdPR.data;
     });

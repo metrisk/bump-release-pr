@@ -30,7 +30,7 @@ export async function createPR(
     base: 'main',
     head: 'release',
     body: await createPRBody(),
-    title: 'RELEASE'
+    title: 'chore(release)'
   })
   return createdPR.data
 }
