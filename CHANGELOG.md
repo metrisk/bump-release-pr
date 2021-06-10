@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/metrisk/bump-release-pr/compare/v0.0.4...v0.0.5) (2021-06-10)
+
+
+### Bug Fixes
+
+* **import:** fixed github import ([bd9240a](https://github.com/metrisk/bump-release-pr/commit/bd9240a05faea36d5e190f3fb4b2d16ac83c18c5))
+
 ### [0.0.4](https://github.com/metrisk/bump-release-pr/compare/v0.0.3...v0.0.4) (2021-06-04)
 
 
