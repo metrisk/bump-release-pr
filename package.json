@@ -55,7 +55,7 @@
     "@types/jest": "26.0.24",
     "@types/node": "15.12.2",
     "@types/nodegit": "0.27.2",
-    "@types/standard-version": "7.0.0",
+    "@types/standard-version": "7.0.1",
     "@typescript-eslint/parser": "4.28.2",
     "@vercel/ncc": "0.28.6",
     "commitizen": "4.2.4",
